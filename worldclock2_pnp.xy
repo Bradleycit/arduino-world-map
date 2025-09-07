@@ -1,0 +1,26 @@
+# Pick And Place List
+# Company=
+# Author=
+# eMail=
+#
+# Project=worldclock2
+# Date=21:03:23
+# CreatedBy=Fritzing 1.0.1rc.2023-09-04.CD-1653-0-8d480a18
+#
+#
+# Coordinates in mils, always center of component
+# Origin 0/0=Lower left corner of PCB
+# Rotation in degree (0-360, math. pos.)
+#
+RefDes,Description,Package,X,Y,Rotation,Side,Mount
+Description: resistance;capacitance;inductance;voltage;current;power;mpn;mn;
+R2,";;;;;0.5W;;;","THT",2339.22,661.913,0,Top,THT
+R3,"1k;;;;;0.25W;;;","THT",745.222,1561.92,0,Top,THT
+Via3,";;;;;;;;","",945.224,261.914,0,Top,MANUAL
+R1,";;;;;;;;","photocell-kit",1466.48,1261.92,0,Top,SMT
+R4,"1k;;;;;0.25W;;;","THT",745.222,1261.92,0,Top,THT
+Via4,";;;;;;;;","",745.224,261.914,0,Top,MANUAL
+S1,";;;;;;;;","[THT]",2173.18,1350.51,0,Top,THT
+ZS-042 RTC1,";;;;;;;;","",833.814,730.367,0,Top,MANUAL
+Via2,";;;;;;;;","",1945.22,1761.92,0,Top,MANUAL
+Part1,";;;;;;;;","",1393.99,1111.92,0,Top,MANUAL
