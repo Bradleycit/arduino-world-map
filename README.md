@@ -87,7 +87,7 @@ You can build it as an educational tool, interactive décor, or a world clock ce
 
 | ATmega328 Pinout Reference |
 |-----------------------------|
-| ![ATmega328 Pinout](arduino_world_map/ATmega328-Pinout.png.webp) |
+| ![ATmega328 Pinout](/ATmega328-Pinout.png.webp) |
 
 *Use this pinout to identify proper LED, power, and sensor connections when building your circuit.*
 
