@@ -135,13 +135,13 @@ Reference pinouts (e.g., `ATmega328-Pinout.png.webp`) are included to help map c
 
 Some highlights from the project build:
 
-![LED Map Layout](arduino_world_map/1%20-%20Fgv0gnK.png)  
+![LED Map Layout](/1%20-%20Fgv0gnK.png)  
 *Initial LED layout concept*
 
-![Fritzing Diagram](arduino_world_map/3%20-%20o23TLHJ.png)  
+![Fritzing Diagram](/3%20-%20o23TLHJ.png)  
 *Arduino circuit and wiring layout*
 
-![Mounted Display](arduino_world_map/10%20-%20KGwefPr.jpg)  
+![Mounted Display](/10%20-%20KGwefPr.jpg)  
 *Finished and mounted world map display*
 
 ---
