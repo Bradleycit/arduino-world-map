@@ -138,10 +138,10 @@ Some highlights from the project build:
 ![LED Map Layout](/1%20-%20Fgv0gnK.png)  
 *Initial LED layout concept*
 
-![Fritzing Diagram](/3%20-%20o23TLHJ.png)  
+![Fritzing Diagram](/10%20-%20KGwefPr.jpg)  
 *Arduino circuit and wiring layout*
 
-![Mounted Display](/10%20-%20KGwefPr.jpg)  
+![Mounted Display](/3%20-%20o23TLHJ.png)  
 *Finished and mounted world map display*
 
 ---
