@@ -14,7 +14,7 @@ This project unites **Arduino or ESP32 control**, **LED animation**, and **custo
 
 | World Map Display | Wiring & Layout | Finished Assembly |
 |-------------------|----------------|-------------------|
-| ![World Map Overview](/1%20-%20Fgv0gnK.png) | ![Circuit Wiring Example](/10%20-%20KGwefPr.jpg3) | ![Mounted Display](/%20-%20o23TLHJ.png) |
+| ![World Map Overview](/1%20-%20Fgv0gnK.png) | ![Circuit Wiring Example](/10%20-%20KGwefPr.jpg) | ![Mounted Display](/%20-%20o23TLHJ.png) |
 
 ---
 
