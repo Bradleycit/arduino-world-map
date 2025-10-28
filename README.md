@@ -14,7 +14,7 @@ This project unites **Arduino or ESP32 control**, **LED animation**, and **custo
 
 | World Map Display | Wiring & Layout | Finished Assembly |
 |-------------------|----------------|-------------------|
-| ![World Map Overview](/images/1%20-%20Fgv0gnK.png) | ![Circuit Wiring Example](/10%20-%20KGwefPr.jpg) | ![Mounted Display](/16%20-%20NP3Rcuw.png) |
+| ![World Map Overview](/images/1%20-%20Fgv0gnK.png) | ![Circuit Wiring Example](/images/10%20-%20KGwefPr.jpg) | ![Mounted Display](/images/16%20-%20NP3Rcuw.png) |
 
 ---
 
@@ -87,7 +87,7 @@ You can build it as an educational tool, interactive décor, or a world clock ce
 
 | ATmega328 Pinout Reference |
 |-----------------------------|
-| ![ATmega328 Pinout](/ATmega328-Pinout.png.webp) |
+| ![ATmega328 Pinout](/images/ATmega328-Pinout.png.webp) |
 
 *Use this pinout to identify proper LED, power, and sensor connections when building your circuit.*
 
@@ -135,13 +135,13 @@ Reference pinouts (e.g., `ATmega328-Pinout.png.webp`) are included to help map c
 
 Some highlights from the project build:
 
-![LED Map Layout](/1%20-%20Fgv0gnK.png)  
+![LED Map Layout](/images/1%20-%20Fgv0gnK.png)  
 *Initial LED layout concept*
 
-![Fritzing Diagram](/10%20-%20KGwefPr.jpg)  
+![Fritzing Diagram](/images/10%20-%20KGwefPr.jpg)  
 *Arduino circuit and wiring layout*
 
-![Mounted Display](/3%20-%20o23TLHJ.png)  
+![Mounted Display](/images/3%20-%20o23TLHJ.png)  
 *Finished and mounted world map display*
 
 ---
