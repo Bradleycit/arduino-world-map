@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World Map Lights</title>
+<style>
+body{font-family:system-ui;background:#0b0f14;color:#e6eef6;margin:0;padding:20px}
+.panel{background:#0f1720;padding:16px;border-radius:10px;max-width:720px;margin:0 auto}
+label{display:block;margin:10px 0;color:#9aa6b2}
+.controls{display:flex;gap:12px;align-items:center}
+.hue{width:48px;height:48px;border-radius:6px;border:1px solid rgba(255,255,255,0.06)}
+.row{display:flex;gap:12px;align-items:center}
+.small{font-size:12px;color:#9aa6b2}
+</style></head>
+<body>
+<div class="panel">
+<h2>World Map Lights</h2>
+<label>Mode<select id="mode" onchange="update('mode',this.value)"><option value="0">Sunlight</option><option value="1">Rainbow</option><option value="2">Solid</option><option value="3">Off</option></select></label>
+<label>Brightness <input id="brightness" type="range" min="0" max="255" oninput="onBrightness(this.value)"><span id="bval" class="small"></span></label>
+<label>Color<div class="controls"><input id="color" type="color" oninput="onColor(this.value)"><div id="swatch" class="hue"></div></div></label>
+<label>Rainbow Speed <input id="rainbowSpeed" type="range" min="1" max="20" oninput="onRainbow(this.value)"><span id="rval" class="small"></span></label>
+<label><input id="autodim" type="checkbox"> Auto Dim</label>
+<label><input id="darkTheme" type="checkbox"> Dark Theme</label>
+<div class="row"><div>Ambient Light: <span id="lightLevel">--</span></div><div style="margin-left:auto">Time: <span id="time">--</span></div></div>
+<hr>
+<h3>Wi-Fi Setup</h3>
+<label>SSID <input id="ssid" type="text"></label>
+<label>Password <input id="pass" type="password"></label>
+<button onclick="saveWifi()">Save Wi-Fi</button>
+</div>
+<script>
+function update(p,v){fetch('/set?'+p+'='+encodeURIComponent(v));}
+function onBrightness(v){document.getElementById('bval').innerText=v;update('brightness',v);}
+function onColor(v){document.getElementById('swatch').style.background=v;update('color',v.substring(1));}
+function onRainbow(v){document.getElementById('rval').innerText=v;update('rainbowSpeed',v);}
+async function init(){
+ try{
+   let s = await (await fetch('/getsettings')).json();
+   document.getElementById('mode').value = s.mode;
+   document.getElementById('brightness').value = s.brightness; document.getElementById('bval').innerText = s.brightness;
+   document.getElementById('color').value = s.color; document.getElementById('swatch').style.background = s.color;
+   document.getElementById('autodim').checked = s.autoDim; document.getElementById('rainbowSpeed').value = s.rainbowSpeed; document.getElementById('rval').innerText = s.rainbowSpeed;
+   document.getElementById('darkTheme').checked = s.darkTheme;
+ }catch(e){}
+ setInterval(async ()=>{
+   try{document.getElementById('lightLevel').innerText = await (await fetch('/light')).text();}catch(e){}
+   try{document.getElementById('time').innerText = await (await fetch('/time')).text();}catch(e){}
+ },1000);
+}
+function saveWifi(){ let ss=document.getElementById('ssid').value; let pw=document.getElementById('pass').value; update('ssid',ss); update('pass',pw); alert('Saved - reboot device'); }
+init();
+</script>
+</body></html>
